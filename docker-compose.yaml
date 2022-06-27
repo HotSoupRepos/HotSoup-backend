@@ -1,0 +1,35 @@
+version: '3.8'
+
+name: HotSoupContainers
+
+services:
+  database:
+    container_name: HotSoupPrimaryDb
+    image: postgres
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=postgres
+    volumes: 
+      - db:/var/lib/postgresql/data
+    networks:
+      - hotsoup
+      
+
+  adminer:
+    container_name: HotSoupAdminer
+    image: adminer
+    restart: always
+    depends_on:
+      - database
+    ports:
+      - 8080:8080
+    networks:
+      - hotsoup
+volumes:
+  db:
+    driver: local
+networks:
+  hotsoup: {}
