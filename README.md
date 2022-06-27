@@ -1,6 +1,6 @@
 # HotSoup-backend
 
-Backend repository for the HotSoup project. This is an example readme to be filled out by the team.
+The purpose 
 
 ## Description
 
