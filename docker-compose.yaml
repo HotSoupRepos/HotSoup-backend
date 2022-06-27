@@ -1,0 +1,18 @@
+services:
+  database:
+    image: postgres
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      POSTGRES_USER: HotSoup
+      POSTGRES_PASSWORD: HotSoupBackEnd2022!
+      POSTGRES_DB: hotsoup-backend-database-1
+
+  adminer:
+    image: adminer
+    restart: always
+    depends_on:
+      - database
+    ports:
+      - 8080:8080
