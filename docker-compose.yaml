@@ -3,6 +3,13 @@ version: '3.8'
 name: HotSoupContainers
 
 services:
+  web:
+    build: .
+    command: uvicorn app.main:app --host 0.0.0.0
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
   database:
     container_name: HotSoupPrimaryDb
     image: postgres
