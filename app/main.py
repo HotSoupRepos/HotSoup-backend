@@ -12,9 +12,8 @@ async def read_root():
 
 
 @app.get("/locations/{location_id}")
-async def read_item(location_id: int, q: Union[str, None] = None):
+async def read_location(location_id: int):
 
     f = open('sample_locations.json')
     json_data = json.load(f)
     return json_data[str(location_id)]
-    
