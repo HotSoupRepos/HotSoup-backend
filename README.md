@@ -19,17 +19,19 @@ You can view additional resources [here](documentation/resources.md).
 
 ### Installing
 
-#### Linux Ubuntu 20.04
+#### Linux Ubuntu 20.04 or newer
+___
+
 You can install the following required software via the command line (Ctrl + Alt + T).
 ##### Python 3
 Per this [PhoenixNap article](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) for installing Python 3 on Ubuntu 18.04 or 20.04.
 
-**Check your verion of python:**
+###### Check your verion of python:
 `python --version`
 
 If the revision level is lower than 3.7.x, or Python is not installed, proceed to the next step.
 
-**Update and Refresh Repository Links**
+###### Update and Refresh Repository Links
 `sudo apt update`
 
 **Install Supporting Software**
