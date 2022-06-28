@@ -18,6 +18,7 @@ You will need the following dependencies to run or contribute to this project:
 * [Psychopg2](https://pypi.org/project/psycopg2/)
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/)
+* [PostgreSQL](https://www.postgresql.org/)
 
 See the [Dependencies](./documentation/dependencies.md) document for installation steps for these dependencies.
 
