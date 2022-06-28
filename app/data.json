@@ -1,0 +1,39 @@
+{
+  "localsoupkitchens": [
+    {
+      "name": "Thomas Merton Center",
+      "address": "43 Madison Ave Bridgeport CT 06606",
+      "phone": "2033679036",
+      "lat": "41.18754",
+      "long": "-73.2180112"
+    },
+    {
+      "name": "Setting Captives Free Ministries",
+      "address": "2180 Main St Bridgeport CT 06606",
+      "phone": "N/A",
+      "lat": "41.19440",
+      "long": "-73.19822"
+    },
+    {
+      "name": "St John's Family Center",
+      "address": "1067 Park Ave Bridgeport CT 06604",
+      "phone": "2033352999",
+      "lat": "41.18754",
+      "long": "-73.2180112"
+    },
+    {
+      "name": "Catholic Charities of Fairfield County",
+      "address": "238 Jewett Ave  Bridgeport CT 06606",
+      "phone": "2034161503",
+      "lat": "41.17579",
+      "long": "-73.19960"
+    },
+    {
+      "name": "Bishop Jean Williams Food Pantry",
+      "address": "4 Worth St Bridgeport, CT 06604",
+      "phone": "2038730260",
+      "lat": "41.18185",
+      "long": "-73.20262"
+    }
+  ]
+}
