@@ -17,3 +17,4 @@ async def read_item(location_id: int, q: Union[str, None] = None):
     f = open('sample_locations.json')
     json_data = json.load(f)
     return json_data[str(location_id)]
+    
