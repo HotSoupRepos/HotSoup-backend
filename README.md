@@ -1,6 +1,6 @@
 # HotSoup-backend
 
-The purpose 
+Backend API for React Native hot food locations app
 
 ## Description
 
@@ -15,7 +15,7 @@ You can view additional resources [here](documentation/resources.md).
 ### Dependencies
 
 - Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-- ex. Windows 10
+- Docker: https://docs.docker.com/get-docker/
 
 ### Installing
 
@@ -27,9 +27,19 @@ You can view additional resources [here](documentation/resources.md).
 - How to run the program
 - Step-by-step bullets
 
+
+Access server at http://localhost:8000
+
+Sample data can be accessed with http://localhost:8000/locations/1
+
+To run:
 ```
-code blocks for commands
+docker compose build
+docker compose up
 ```
+
+To shut down:
+docker compose down
 
 ## Help
 
