@@ -72,7 +72,7 @@ Docker is an open platform for developing, sharing, and running applications. In
 
 
 ### Docker Compose
-Docker Compose reads configuration data from the docker-compose.yaml file to spin up a new container in a single command. Install Docker Compose per this [DigitalOcean article](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04docker).
+Docker Compose reads configuration data from the docker-compose.yaml file to spin up a new container in a single command. Install Docker Compose per this [DigitalOcean article](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04).
 
 #### Make a new directory
 `mkdir -p ~/.docker/cli-plugins/`
