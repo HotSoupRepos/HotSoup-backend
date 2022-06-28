@@ -12,10 +12,10 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 #insert data
-cur.execute("INSERT INTO localsoupkitchens(name,age) VALUES ('Claudia',11)")
+cur.execute("INSERT INTO test(name,age) VALUES ('Claudia',11)")
 
 # Query the database 
-cur.execute("SELECT * FROM localsoupkitchens")
+cur.execute("SELECT * FROM test")
 rows = cur.fetchall()
 
 if not len(rows):

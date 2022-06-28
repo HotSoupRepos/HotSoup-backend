@@ -87,3 +87,8 @@ Docker Compose reads configuration data from the docker-compose.yaml file to spi
 `docker compose version`
 
 This should return v2.3.3
+
+### PostgreSQL
+Install per this [Ubuntu article](https://ubuntu.com/server/docs/databases-postgresql). Also see this article for more information on configuration, if required. 
+
+`sudo apt install postgresql`
