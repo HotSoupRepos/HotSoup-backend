@@ -49,7 +49,7 @@ Press enter to continue and then refresh the package lists again:
 ###### Install Python 3
 `sudo apt install python3.8`
 
-**Verify installation** 
+###### Verify installation
 `python --version`
 
 This should return (3.8.x).
