@@ -1,7 +1,7 @@
 ## Installing dependencies for Linux Ubuntu 20.04 or newer
-___
 
 You can install the following required software via the command line (Ctrl + Alt + T).
+
 ### Python 3
 Per this [PhoenixNap article](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) for installing Python 3 on Ubuntu 18.04 or 20.04.
 
@@ -33,6 +33,7 @@ Press enter to continue and then refresh the package lists again:
 
 This should return (3.8.x).
 
+
 ### Psycopg2
 PsycoPG2 is an open-source PostgreSQL driver library for Python. Install per this [Codevoila article](https://www.codevoila.com/post/2/python3-connect-postgresql-with-psycopg2-on-ubuntu).
 
@@ -41,6 +42,7 @@ PsycoPG2 is an open-source PostgreSQL driver library for Python. Install per thi
 
 #### Install Psycopg2 using apt
 `sudo apt-get install python3-Psycopg2`
+
 
 ### Docker
 Docker is an open platform for developing, sharing, and running applications. Install Docker from the apt respository per this [DevOpsCube article](https://devopscube.com/how-to-install-and-configure-docker/).
@@ -67,6 +69,7 @@ Docker is an open platform for developing, sharing, and running applications. In
 
 #### Verify installation
 `sudo docker version`
+
 
 ### Docker Compose
 Docker Compose reads configuration data from the docker-compose.yaml file to spin up a new container in a single command. Install Docker Compose per this [DigitalOcean article](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04docker).
