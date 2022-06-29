@@ -9,6 +9,13 @@
 2. [GitHub Repo](https://github.com/tiangolo/fastapi)\
    The Fast API github repository.
 
+   ## Commands to spin up docker server:
+   docker compose up -d 
+
+   ## Install 
+
+   pip install psycopg2-binary
+
 ## Git and GitHub
 
 1. [Signing git commits on MacOS](https://samuelsson.dev/sign-git-commits-on-github-with-gpg-in-macos/)\
