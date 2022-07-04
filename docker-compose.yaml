@@ -1,42 +1,27 @@
 version: '3.8'
 
 name: HotSoupContainers
-
 services:
-  web:
+  app:
     build: .
     command: uvicorn app.main:app --host 0.0.0.0
     volumes:
       - .:/app
     ports:
       - 8000:8000
+    networks:
+      - HotSoup_Backend_Network
   database:
     container_name: HotSoupPrimaryDb
-    image: postgres
+    image: 'mongo:latest'
+    env_file:
+      - ./.env.dev
+    volumes:
+      - ./.volumes/mongodb/data/db:/data/db
     ports:
-      - 5432:5432
-    restart: always
-    environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=postgres
-    volumes: 
-      - db:/var/lib/postgresql/data
+      - '${MONGO_PORT:-27017}-27019:${MONGO_PORT:-27017}-27019'
     networks:
-      - hotsoup
-      
-
-  adminer:
-    container_name: HotSoupAdminer
-    image: adminer
-    restart: always
-    depends_on:
-      - database
-    ports:
-      - 8080:8080
-    networks:
-      - hotsoup
-volumes:
-  db:
-    driver: local
+      - HotSoup_Backend_Network
 networks:
-  hotsoup: {}
+  HotSoup_Backend_Network:
+    name: "hotsoup_backend_network"
