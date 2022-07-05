@@ -23,3 +23,7 @@ archive.zip
 # vim temporary files
 *~
 .*.sw?
+.volumes/mongodb/*
+
+db/*
+.DS_Store

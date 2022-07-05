@@ -13,9 +13,14 @@ You can view the design document [here](documentation/design.md).
 You can view additional resources [here](documentation/resources.md).
 
 ### Dependencies
+You will need the following dependencies to run or contribute to this project:
+* [Python3](https://www.python.org/downloads/)
+* [Psychopg2](https://pypi.org/project/psycopg2/)
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker Compose](https://docs.docker.com/compose/)
+* [PostgreSQL](https://www.postgresql.org/)
 
-- Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-- Docker: https://docs.docker.com/get-docker/
+See the [Dependencies](./documentation/dependencies.md) document for installation steps for these dependencies.
 
 ### Installing
 
