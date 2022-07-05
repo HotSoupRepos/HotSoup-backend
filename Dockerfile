@@ -1,16 +1,20 @@
 FROM python:3.10-alpine
 
+ENV POETRY_VERSION=1.1.13
+
+RUN pip install poetry==${POETRY_VERSION}
+
 WORKDIR /code
 
-COPY ./requirements.txt /code/requirements.txt
-COPY ./app/sample_locations.json /code/sample_locations.json 
+COPY poetry.lock pyproject.toml /code/
 
-RUN \
- apk add --no-cache postgresql-libs && \
- apk add --no-cache --virtual .build-deps gcc musl-dev postgresql-dev && \
- python3 -m pip install -r requirements.txt --no-cache-dir && \
- apk --purge del .build-deps
+
+#Turn off virtual env since it will be in a container.
+RUN poetry config virtualenvs.create false 
+#install all dependancies via poetry.lock and pyproject.toml
+RUN poetry install
 
 COPY ./app /code/app
+
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
