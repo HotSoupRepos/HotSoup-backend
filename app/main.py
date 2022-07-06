@@ -14,7 +14,6 @@ async def read_root():
 async def get_all_locations():
 
     d = open('data.json')
-    print(d)
     json_data = json.load(d)
     return json_data["localsoupkitchens"]
 
@@ -23,6 +22,5 @@ async def get_all_locations():
 async def search_locations(query: str):
 
     d = open('data.json')
-    print(d)
     json_data = json.load(d)
     return json_data["localsoupkitchens"][query.lower()]
