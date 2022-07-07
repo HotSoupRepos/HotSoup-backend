@@ -40,7 +40,7 @@ Sample data can be accessed with http://localhost:8000/locations/1
 To run:
 ```
 docker compose build
-docker compose up
+docker compose up -d
 ```
 
 To shut down:
