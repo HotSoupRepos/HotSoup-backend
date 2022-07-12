@@ -1,10 +1,16 @@
 import requests
 
-url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=YOUR_API_KEY"
+def test_api_query (lat, long, type, keyword):
+    
 
-payload={}
-headers = {}
+    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{long}&radius=1500&type={type}&keyword={keyword}&key={YOUR-API-KEY-HERE}"
 
-response = requests.request("GET", url, headers=headers, data=payload)
+    payload={}
+    headers = {}
 
-print(response.text)
+    response = requests.request("GET", url, headers=headers, data=payload)
+
+    print(response.text)
+
+test_api_query("41.18754","-73.2180112","food bank","food pantry")
+
