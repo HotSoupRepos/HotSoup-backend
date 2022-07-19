@@ -21,6 +21,18 @@ def test_api_query (lat, long, type, keyword):
 
     print(response.text)
 
-test_api_query("41.18754","-73.2180112","food bank","food pantry")
+# test_api_query("41.18754","-73.2180112","food bank","food pantry")
 #test with long, lat, type, and keyword
+def find_geocoding(zipcode: str):
 
+
+    url = f"https://maps.googleapis.com/maps/api/geocode/json?address={zipcode}&key={GOOGLE_MAP_API_KEY}"
+
+    payload={}
+    headers = {}
+
+    response = requests.request("GET", url, headers=headers, data=payload)
+
+    print(response.text)
+
+find_geocoding("94703")
