@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+FROM python:3.10-slim
 
 ENV POETRY_VERSION=1.1.13
 
