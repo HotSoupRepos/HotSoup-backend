@@ -27,10 +27,7 @@ See the [Dependencies](./documentation/dependencies.md) document for installatio
 - How/where to download your program
 - Any modifications needed to be made to files/folders
 
-### Executing program
-
-- How to run the program
-- Step-by-step bullets
+### Executing docker program
 
 
 Access server at http://localhost:8000
@@ -45,6 +42,25 @@ docker compose up
 
 To shut down:
 docker compose down
+
+## To run googleAPI.py file
+
+1) To get data to print from google API you must first create your own Googole API key (Eventually we will have a business account this is for testing purposes for now)
+
+2) [GoogleAPI](https://developers.google.com/maps/documentation/embed/get-api-key) Use this link for API steps
+
+3) Once API key is created create a .env file name your key GOOGLE_MAP_API_KEY="YOUR-API-KEY-HERE" **very important do not put your API key in the googpleAPI file
+you will risk it being exposed on github! 
+
+4) add .env to the .gitignore file so it is not exposed on github
+
+5) test out by running the command python3 googleAPI.py 
+
+6) data from google api should be printed to console
+
+***in settings for google api make sure maps are enabled for API key to be valid- questions about this can be found at link listed above
+
+
 
 ## Help
 
