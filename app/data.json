@@ -1,5 +1,6 @@
 {
-  "localsoupkitchens": [
+  "localsoupkitchens": {
+  "connecticut":[
     {
       "name": "Thomas Merton Center",
       "address": "43 Madison Ave Bridgeport CT 06606",
@@ -34,6 +35,7 @@
       "phone": "2038730260",
       "lat": "41.18185",
       "long": "-73.20262"
-    }
+    }  
   ]
+}
 }
