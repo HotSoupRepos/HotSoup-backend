@@ -10,10 +10,17 @@ app = FastAPI()
 async def read_root():
     return {"Hello": "World"}
 
+@app.get("/locations")
+async def get_all_locations():
 
-@app.get("/locations/{location_id}")
-async def read_location(location_id: int):
+    d = open('data.json')
+    json_data = json.load(d)
+    return json_data["localsoupkitchens"]
 
-    f = open('sample_locations.json')
-    json_data = json.load(f)
-    return json_data[str(location_id)]
+
+@app.get("/locations/{query}")
+async def search_locations(query: str):
+
+    d = open('data.json')
+    json_data = json.load(d)
+    return json_data["localsoupkitchens"][query.lower()]
