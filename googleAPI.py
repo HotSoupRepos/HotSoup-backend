@@ -8,10 +8,10 @@ load_dotenv()
 GOOGLE_MAP_API_KEY=os.getenv("GOOGLE_MAP_API_KEY")
 #use own API KEY from google cloud account - will consolidate to business api at later date
 
-def test_api_query (lat, lng, type, keyword):
+def test_api_query (lat, long, type, keyword):
     
 
-    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{lng}&radius=3000&type={type}&keyword={keyword}&key={GOOGLE_MAP_API_KEY}"
+    url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{long}&radius=3000&type={type}&keyword={keyword}&key={GOOGLE_MAP_API_KEY}"
     #default to 20 add parameter token to get up to 60 search results 
 
     payload={}
