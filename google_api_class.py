@@ -1,8 +1,8 @@
 import googleAPI
 import requests
 
-class googleAPI:
-    def __createLink__(self, api, parameters, lat, long, type, keyword):
+class Google_API:
+    def Maps_API_Request(self, api, parameters, lat, long, type, keyword):
         parameters = {
             lat: "lat",
             long: "long",
