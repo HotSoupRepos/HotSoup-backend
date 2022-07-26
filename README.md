@@ -28,7 +28,7 @@ Git clone this repo and cd into the directory.
 To run:
 ```
 docker compose build
-docker compose up
+docker compose up -d
 ```
 
 Access server at http://localhost:8000
@@ -39,7 +39,6 @@ To shut down:
 docker compose down
 
 
-<<<<<<< google-api2
 ## To run googleAPI.py file
 
 1) To get data to print from google API you must first create your own Googole API key (Eventually we will have a business account this is for testing purposes for now)
@@ -58,11 +57,6 @@ you will risk it being exposed on github!
 ***in settings for google api make sure maps are enabled for API key to be valid- questions about this can be found at link listed above
 
 
-=======
-## Contributing
-
-Fork this repo and make a feature branch for pull requests, or join our Discord to be added as a contributor.
->>>>>>> main
 
 ## Help
 
