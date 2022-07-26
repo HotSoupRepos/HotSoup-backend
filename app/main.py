@@ -33,5 +33,5 @@ async def search_locations(query: str):
 
 
 @app.post("/locations/", response_model=User)
-async def create_locations(user: User):
+async def search_locations(user: User):
     return user
