@@ -40,6 +40,19 @@ Sample data can be accessed with http://localhost:8000/locations
 To shut down:
 docker compose down
 
+## Testing
+
+We are using pytest as our test suite. Please write tests for any new features: https://semaphoreci.com/community/tutorials/building-and-testing-an-api-wrapper-in-python
+
+All tests are currently in the /tests directory, run this command in the root directory:
+
+```
+python -m pytest
+
+```
+
+for current test output.
+
 ## Contributing
 
 Fork this repo and make a feature branch for pull requests, or join our Discord to be added as a contributor.
