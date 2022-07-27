@@ -12,12 +12,13 @@ You can view the design document [here](documentation/design.md).
 
 You can view additional resources [here](documentation/resources.md).
 
-
 ### Dependencies
+
 You will need the following dependencies to run or contribute to this project:
-* [Python3](https://www.python.org/downloads/)
-* [Docker](https://docs.docker.com/get-docker/)
-* [Docker Compose](https://docs.docker.com/compose/)
+
+- [Python3](https://www.python.org/downloads/)
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 See the [Dependencies](./documentation/dependencies.md) document for installation steps for these dependencies.
 
@@ -25,12 +26,11 @@ See the [Dependencies](./documentation/dependencies.md) document for installatio
 
 Git clone this repo and cd into the directory.
 
-### Executing program
-
 To run:
+
 ```
 docker compose build
-docker compose up
+docker compose up -d
 ```
 
 Access server at http://localhost:8000
@@ -39,6 +39,38 @@ Sample data can be accessed with http://localhost:8000/locations
 
 To shut down:
 docker compose down
+
+## To run googleAPI.py file
+
+1. To get data to print from google API you must first create your own Googole API key (Eventually we will have a business account this is for testing purposes for now)
+
+2. [GoogleAPI](https://developers.google.com/maps/documentation/embed/get-api-key) Use this link for API steps
+
+3. Once API key is created create a .env file name your key GOOGLE_MAP_API_KEY="YOUR-API-KEY-HERE" \*\*very important do not put your API key in the googpleAPI file
+   you will risk it being exposed on github!
+
+4. add .env to the .gitignore file so it is not exposed on github
+
+5. test out by running the command python3 googleAPI.py
+
+6. data from google api should be printed to console
+
+\*\*\*in settings for google api make sure maps are enabled for API key to be valid- questions about this can be found at link listed above
+
+# =======
+
+## Testing
+
+We are using pytest as our test suite. Please write tests for any new features: https://semaphoreci.com/community/tutorials/building-and-testing-an-api-wrapper-in-python
+
+All tests are currently in the /tests directory, run this command in the root directory:
+
+```
+python -m pytest
+
+```
+
+for current test output.
 
 ## Contributing
 

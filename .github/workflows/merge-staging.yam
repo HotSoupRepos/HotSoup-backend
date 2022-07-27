@@ -1,7 +1,7 @@
 on:
   pull_request:
     branches:
-      - test
+      - staging
 jobs:
     merge_check:
     runs-on: ubuntu-latest
