@@ -30,7 +30,7 @@ To run:
 
 ```
 docker compose build
-docker compose up
+docker compose up -d
 ```
 
 Access server at http://localhost:8000
