@@ -19,7 +19,6 @@ docs_build
 venv
 docs.zip
 archive.zip
-.env
 rita.env
 
 # vim temporary files
