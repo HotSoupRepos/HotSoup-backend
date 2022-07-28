@@ -8,7 +8,6 @@ class googleAPI:
             long: "long",
             type: "type",
             keyword: "keyword"
-            #ID?
         }
         url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{long}&radius=3000&type={type}&keyword={keyword}&key={GOOGLE_MAP_API_KEY}"
         response = requests.get(url, params=parameters)
