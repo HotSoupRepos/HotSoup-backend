@@ -2,12 +2,6 @@ import googleAPI
 import requests
 
 try:
-    import json
-except ImportError:  # pragma: no cover
-    # For older versions of Python.
-    import data.json as json
-
-try:
     from urllib import urlencode
 except ImportError:  # pragma: no cover
     # For Python 3.
@@ -38,6 +32,8 @@ class Google_API:
         else:
             print(
                 f"Hello person, there's a {response.status_code} error with your request")
+
+                #change print statements add return
 
 
     def check_url(self):

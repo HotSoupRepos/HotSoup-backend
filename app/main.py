@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from fastapi import FastAPI
 import json
 
-import api_management.google_api_module as googleAPIMod
+import api_management.google_api_class as google_api
 
 
 app = FastAPI()
