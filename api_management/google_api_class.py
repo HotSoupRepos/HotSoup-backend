@@ -27,13 +27,12 @@ class Google_API:
         url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{long}&radius=3000&type={type}&keyword={keyword}&key={GOOGLE_MAP_API_KEY}"
         response = requests.get(url, params=parameters)
         if response.status_code == 200:
-            print("sucessfully fetched the data with parameters provided")
+            status_code_200 = "sucessfully fetched the data with parameters provided"
             self.formatted_print(response.json())
+            return status_code_200
         else:
-            print(
-                f"Hello person, there's a {response.status_code} error with your request")
-
-                #change print statements add return
+            error_code_alternate = "Hello person, there's a {response.status_code} error with your request"
+            return error_code_alternate
 
 
     def check_url(self):
@@ -41,6 +40,7 @@ class Google_API:
         if(url and url.endswith('/')):
             url = url.rstrip('/')
             self.url = url
+            return None
 
 
     def format_api_data_to_json(self, output_format, data):
