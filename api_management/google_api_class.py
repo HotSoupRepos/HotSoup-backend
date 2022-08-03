@@ -50,3 +50,4 @@ class Google_API:
             return json.loads(data)
         return data
     
+#import route into function

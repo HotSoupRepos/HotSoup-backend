@@ -56,27 +56,9 @@ async def search_locations(query: str):
     json_data = json.load(d)
     return json_data["localsoupkitchens", "lat"][query.lower()]
 
-@app.post("/lat/", response_model=google_api)
-async def search_locations(user: google_api.Google_API):
+@app.post("/locations/", response_model=User)
+async def search_locations(user: User):
     return user
 
     #######
 
-@app.get("/lng/")
-async def get_all_longitudes():
-
-    d = open('data.json')
-    json_data = json.load(d)
-    return json_data["lng"]
-
-@app.get("/lng/{query}")
-async def search_locations(query: str):
-
-    d = open('data.json')
-    
-    json_data = json.load(d)
-    return json_data["localsoupkitchens", "lng"][query.lower()]
-
-@app.post("/lng/", response_model=google_api)
-async def search_locations(user: google_api.Google_API):
-    return user
